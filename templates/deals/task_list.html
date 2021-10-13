@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <h1>Task list</h1>
+    <ul>
+      {% for task in object_list %}
+        <li>
+          <a href="{% url 'deals:task_detail' task.slug %}">{{ task.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    <a href="{% url 'deals:home' %}">To main</a>
+  </body>
+</html>

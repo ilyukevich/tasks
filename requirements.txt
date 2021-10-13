@@ -1,0 +1,4 @@
+django==3.2.8 #https://pypi.org/project/Django/
+pillow==8.3.2 #https://pypi.org/project/Pillow/
+pytz==2021.3 #https://pypi.org/project/pytz/
+pytils==0.3 #https://pypi.org/project/pytils/

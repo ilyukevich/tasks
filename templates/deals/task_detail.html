@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <h1>Detail of task ID: {{ task.id }}</h1>
+    <ul>
+      <li>
+        <a href="{% url 'deals:home' %}">To main</a>
+      </li>
+      <li>
+        <a href="{% url 'deals:task_list' %}">Task list</a>
+      </li>
+    </ul>
+    <h2>{{ task.title }}</h2>
+    <p>{{ task.text }}</p>
+    {% if task.image %}
+      <img src="{{ task.image.url }}">
+    {% endif %}
+
+  </body>
+</html>
